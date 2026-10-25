@@ -1,0 +1,20 @@
+.admin-main { min-height: 70vh; padding-top: 70px; padding-bottom: 90px; }
+.admin-main h1 { max-width: 720px; }
+.admin-main h1 span { color: var(--accent); }
+.admin-lead { margin-bottom: 30px; color: var(--muted); }
+.login-form { max-width: 520px; }
+.admin-status { margin: 4px 0 0; color: #ff999e; font-size: .85rem; }
+.admin-status.success { color: var(--accent); }
+.messages-panel { margin-top: 50px; }
+.messages-heading { display: flex; justify-content: space-between; align-items: center; gap: 15px; margin-bottom: 20px; }
+.messages-heading h2 { margin: 0; }
+.messages-list { display: grid; gap: 14px; }
+.message-card { padding: 22px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); }
+.message-card header { display: flex; justify-content: space-between; gap: 14px; margin-bottom: 12px; }
+.message-card h3 { margin: 0; font-size: 1rem; }
+.message-card time, .message-email { color: var(--muted); font-size: .8rem; }
+.message-card p { margin: 8px 0 15px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.delete-message { padding: 7px 11px; border: 1px solid rgba(255,120,130,.5); border-radius: 8px; background: transparent; color: #ff999e; cursor: pointer; }
+.delete-message:hover { background: rgba(255,120,130,.1); }
+.empty-state { padding: 22px; border: 1px dashed var(--line); border-radius: 14px; color: var(--muted); text-align: center; }
+@media (max-width: 600px) { .admin-main { padding-top: 48px; } .message-card header { flex-direction: column; } .messages-heading { align-items: flex-start; flex-direction: column; } }
